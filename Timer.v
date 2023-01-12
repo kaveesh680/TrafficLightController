@@ -20,12 +20,12 @@ module Timer(
 			time_left = Value-1;
 		end
 			
-		if (Reset_Sync)begin
+		if (Reset_Sync | start_timer)begin
 			change = 0;
 		end			
-		if (start_timer) begin
-			change =0;
-		end
+// 		if (start_timer) begin
+// 			change =0;
+// 		end
 		expired = 0;
 		
 		if (oneHz_enable) begin
