@@ -1,27 +1,5 @@
 `timescale 1ns / 1ps
 
-////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer:
-//
-// Create Date:   23:57:31 06/11/2019
-// Design Name:   FSM
-// Module Name:   C:/Users/Aruna/Documents/ISE/TrafficLightController/FSM_test.v
-// Project Name:  TrafficLightController
-// Target Device:  
-// Tool versions:  
-// Description: 
-//
-// Verilog Test Fixture created by ISE for module: FSM
-//
-// Dependencies:
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-////////////////////////////////////////////////////////////////////////////////
-
 module FSM_test;
 
 	// Inputs
