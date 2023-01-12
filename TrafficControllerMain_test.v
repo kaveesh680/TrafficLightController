@@ -1,29 +1,5 @@
 `timescale 1ns / 1ps
 
-////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer:
-//
-// Create Date:   18:26:50 06/25/2019
-// Design Name:   TrafficControllerMain
-// Module Name:   C:/Users/Aruna/Documents/ISE/TrafficLightController/TrafficControllerMain_test.v
-// Project Name:  TrafficLightController
-// Target Device:  
-// Tool versions:  
-// Description: 
-//
-// Verilog Test Fixture created by ISE for module: TrafficControllerMain
-//
-// Dependencies:
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-////////////////////////////////////////////////////////////////////////////////
-
-// Run this module for at least 0.004ms
-
 module TrafficControllerMain_test;
 
 	// Inputs
