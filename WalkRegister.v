@@ -7,11 +7,16 @@ module WalkRegister(
     );
 	 
 	 always@(posedge WR_Sync ,posedge WR_Reset) begin
-		if (WR_Sync) WR = 1;
-		if (WR_Reset) WR = 0;
-	 end
-	
-	 
-
-
+//		if (WR_Sync) WR = 1;
+//		if (WR_Reset) WR = 0;
+		if (WR_Sync) begin
+		  WR = 1;
+		end
+		else begin
+		  if (WR_Reset) begin
+		      WR = 0;
+		  end      
+	    end
+	  end
 endmodule
+
