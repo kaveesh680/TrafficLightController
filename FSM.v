@@ -102,7 +102,7 @@ module FSM(
 						end
 					E: begin
 							LEDs = C;
-							interval = ty;
+							interval = tb;
 							start_timer = 1;
 							WR_Reset = 0;
 						end
