@@ -1,23 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    18:46:06 06/12/2019 
-// Design Name: 
-// Module Name:    Timer 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
+
 module Timer(
     input [3:0] Value,
     input oneHz_enable,
