@@ -1,27 +1,5 @@
 `timescale 1ns / 1ps
 
-////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer:
-//
-// Create Date:   23:40:38 06/12/2019
-// Design Name:   Divider
-// Module Name:   C:/Users/Aruna/Documents/ISE/TrafficLightController/Divider_test.v
-// Project Name:  TrafficLightController
-// Target Device:  
-// Tool versions:  
-// Description: 
-//
-// Verilog Test Fixture created by ISE for module: Divider
-//
-// Dependencies:
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-////////////////////////////////////////////////////////////////////////////////
-
 module Divider_test;
 
 	// Inputs
