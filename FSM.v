@@ -1,23 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    20:39:44 06/11/2019 
-// Design Name: 
-// Module Name:    FSM 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
+
 // LED sequence  : [Rm,Ym,Gm,Rs,Ys,Gs,Walk]
 module FSM(
     input Sensor_Sync,
