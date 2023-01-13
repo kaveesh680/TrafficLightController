@@ -17,9 +17,9 @@ module Divider_test;
 	initial begin 
 	clk=0;
 	rst=0;
-	#10;
+	#20;
 	rst=1;
-	#10;
+	#20;
 	rst=0;
 	end
 	
