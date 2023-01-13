@@ -2,17 +2,14 @@
 
 module TimeParameter_test;
 
-	// Inputs
 	reg [1:0] Selector;
 	reg [3:0] Time_value;
 	reg Prog_Sync;
 	reg [1:0] interval;
 	reg clk;
 
-	// Outputs
 	wire [3:0] value;
 
-	// Instantiate the Unit Under Test (UUT)
 	TimeParameter uut (
 		.Selector(Selector), 
 		.Time_value(Time_value), 
@@ -23,17 +20,16 @@ module TimeParameter_test;
 	);
 
 	initial begin
-		// Initialize Inputs
+		
 		Selector = 2'b00;
 		Time_value = 4'b0000;
 		Prog_Sync = 0;
 		interval = 2'b00;
 		
-		// Wait 100 ns for global reset to finish
 		#10;
        Selector = 2'b00; 
 		 interval = 2'b01;
-		// Add stimulus here
+
 		#10;
 		 Selector = 2'b01;
 		 interval =2'b00;
