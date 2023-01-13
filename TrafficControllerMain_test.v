@@ -2,7 +2,6 @@
 
 module TrafficControllerMain_test;
 
-	// Inputs
 	reg Reset;
 	reg Sensor;
 	reg Walk_Request;
@@ -11,17 +10,9 @@ module TrafficControllerMain_test;
 	reg [3:0] Time_Value;
 	reg clk;
 
-	// Outputs
 	wire [6:0] LEDs;
-	/*wire start_timer; //for visual purposes only
-	wire Reset_Sync;
-	wire expired;
-	wire oneHz_enable;
-	wire [3:0] value;
-	wire [1:0] interval;*/
 	
 	
-	// Instantiate the Unit Under Test (UUT)
 	TrafficControllerMain uut (
 		.Reset(Reset), 
 		.Sensor(Sensor), 
@@ -40,7 +31,6 @@ module TrafficControllerMain_test;
 	);
 
 	initial begin
-		// Initialize Inputs
 		Reset = 0;
 		Sensor = 0;
 		Walk_Request = 0;
