@@ -6,8 +6,8 @@ module Divider(
     output reg oneHz_enable
     );
 	 
-	localparam [26:0] hz_constant = 27'd100_000_000;
-	reg [26:0]counter = hz_constant;
+	 localparam [26:0] hz_constant = 27'd100_000_000;
+	 reg [26:0]counter = hz_constant;
 	 always@(posedge clk)
 		begin
 			if (rst) counter = hz_constant;
