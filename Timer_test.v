@@ -2,17 +2,14 @@
 
 module Timer_test;
 
-	// Inputs
 	reg [3:0] Value;
 	reg oneHz_enable;
 	reg start_timer;
 	reg clk;
 	reg Reset_Sync;
 
-	// Outputs
 	wire expired;
 
-	// Instantiate the Unit Under Test (UUT)
 	Timer uut (
 		.Value(Value), 
 		.oneHz_enable(oneHz_enable), 
@@ -23,12 +20,10 @@ module Timer_test;
 	);
 
 	initial begin
-		// Initialize Inputs
 		Value = 0;
 		oneHz_enable = 0;
 		start_timer = 0;
 		Reset_Sync = 0;
-		// Wait 100 ns for global reset to finish
 		#5;
       Value=4'b1100;
 		start_timer=1;
