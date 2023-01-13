@@ -11,7 +11,7 @@ module Timer(
 	 
 	 
 	 reg [3:0] time_left;
-	 reg change =1; // Since Value is set by the time parameter module Value should be assinged to time_left after a one clock cycle 
+	 reg change =1; 
 	 
 	always@(posedge clk) begin
 		
@@ -20,12 +20,10 @@ module Timer(
 			time_left = Value-1;
 		end
 			
-		if (Reset_Sync | start_timer)begin
+		if (Reset_Sync | start_timer)begin //In the start there is a reset
 			change = 0;
 		end			
-// 		if (start_timer) begin
-// 			change =0;
-// 		end
+		
 		expired = 0;
 		
 		if (oneHz_enable) begin
