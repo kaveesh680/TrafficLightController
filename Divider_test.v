@@ -2,14 +2,11 @@
 
 module Divider_test;
 
-	// Inputs
 	reg clk;
 	reg rst;
 	
-	// Outputs
 	wire oneHz_enable;
 
-	// Instantiate the Unit Under Test (UUT)
 	Divider uut (
 		.rst(rst),
 		.clk(clk), 
