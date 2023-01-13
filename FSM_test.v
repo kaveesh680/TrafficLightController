@@ -1,8 +1,6 @@
 `timescale 1ns / 1ps
 
 module FSM_test;
-
-	// Inputs
 	
 	reg Sensor_Sync;
 	reg WR;
@@ -11,13 +9,11 @@ module FSM_test;
 	reg clk;
 	reg Reset_Sync;
 
-	// Outputs
 	wire WR_Reset;
 	wire [6:0] LEDs;
 	wire [1:0] interval;
 	wire start_timer;
 	
-	// Instantiate the Unit Under Test (UUT)
 	FSM uut (
 		.Sensor_Sync(Sensor_Sync), 
 		.WR(WR), 
