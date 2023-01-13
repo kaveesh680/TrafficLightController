@@ -8,11 +8,7 @@ module TrafficControllerMain(
     input [1:0] Time_Parameter_Selector,
     input [3:0] Time_Value,
     input clk,
-    output [6:0] LEDs/*,
-	 output expired,      //for visual purposes only
-	 output oneHz_enable, //for visual purposes only
-	 output [3:0] value,  //for visual purposes only
-	 output [1:0] interval//for visual purposes only*/
+    output [6:0] LEDs
     );
 	 
 	 wire [1:0] interval;
