@@ -39,10 +39,8 @@ module TrafficControllerMain_test;
 		Time_Value = 0;
 		clk = 0;
 		#20
-		// Wait 100 ns for global reset to finish
-		#5
 		Reset = 1;
-		#5
+		#20
 		Reset = 0;
 		//#100
 		//walk request
