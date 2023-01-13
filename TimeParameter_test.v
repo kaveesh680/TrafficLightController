@@ -31,14 +31,14 @@ module TimeParameter_test;
 		 interval = 2'b01;
 
 		#10;
-		 Selector = 2'b01;
+		 Selector = 2'b10;
 		 interval =2'b00;
 		 
-		#5
+		#10
 		Prog_Sync = 1;
-		#5
-		Selector = 2'b01;
-		Time_value = 4'b1111;
+		#10
+		Selector = 2'b10;
+		Time_value = 4'b1011;
 
 	end
 	
