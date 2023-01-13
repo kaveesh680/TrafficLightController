@@ -9,34 +9,32 @@
     output reg [3:0] value
     );
 	 
-	 reg[3:0] tb = 4'b0110, // interval value = 00
-				 te = 4'b0011, // interval value = 01
-				 ty = 4'b0010; // interval value = 10
+	 reg[3:0] tbase = 4'b0110, // interval value = 00
+				 textended = 4'b0011, // interval value = 01
+				 tyellow = 4'b0010; // interval value = 10
 	     
 						 
 	always@(posedge clk) begin
 	
 	case (interval)
 		
-		2'b00: value = tb;
-		2'b01: value = te;
-		2'b10: value = ty;
-		2'b11: value = 2*tb;
+		2'b00: value = tbase;
+		2'b01: value = textended;
+		2'b10: value = tyellow;
+		2'b11: value = 2*tbase;
 	
 	endcase
-	// Times resets when the selector input is 00. Otherwise the values 
-	// on the time_value input are assigned to the tb, te, ty respectively.
-	// Since register stores the values selected values will be saved untill selector becomes 00.
+
 	if (Prog_Sync) begin
 		case (Selector) 
 			2'b00: begin
-						tb = 4'b0110; // interval value = 00
-						te = 4'b0011; // interval value = 01
-						ty = 4'b0010; // interval value = 10
+						tbase = 4'b0110; // interval value = 00
+						textended = 4'b0011; // interval value = 01
+						tyellow = 4'b0010; // interval value = 10
 					 end
-			2'b01: tb = Time_value;
-			2'b10: te = Time_value;
-			2'b11: ty = Time_value;
+			2'b01: tbase = Time_value;
+			2'b10: textended = Time_value;
+			2'b11: tyellow = Time_value;
 		endcase
 	end
 		
